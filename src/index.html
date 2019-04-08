@@ -7,8 +7,24 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola cipher</h1>
+      <h1>Mensaje Cifrado</h1>
     </div>
+    <button id="cifrar-btn">cifrar</button>
+    <input type="number" id="clave" placeholder="numero clave" required="No olvides tu numero clave de cifrado">
+    <button id="descifrar-btn">descrifrar</button>
+
+    <div id="texto-area">
+      <textarea name="mensaje" id="mensaje" class="textArea" cols="30" rows="10" placeholder="ingresa mensaje" required="Ingresa un mensaje"></textarea>
+    </div>
+
+    <div id="raiz">
+      
+    </div>
+<!-- CAMBIAR ONCLICK -->
+    <button onclick="location.reload()" id="btn-nvo-msj">Nuevo Mensaje</button>
+
+    <button id="compartir">compartir</button>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
