@@ -44,6 +44,10 @@ window.cipher = {
 
   	for(let i=0; i<textoD.length; i++){
   		textASCII_decode=textoD.charCodeAt(i);
+  		// caracteres especiales
+  		if (textASCII_decode>=32 && textASCII_decode<=64) {
+  			
+  		}
 
 
   	}
