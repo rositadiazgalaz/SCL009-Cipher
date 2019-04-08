@@ -47,6 +47,7 @@ window.cipher = {
   		// caracteres especiales
   		if (textASCII_decode>=32 && textASCII_decode<=64) {
   			
+
   		}
 
 
