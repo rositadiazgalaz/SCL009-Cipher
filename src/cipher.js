@@ -43,7 +43,8 @@ window.cipher = {
   	let numClave_decode=parseInt(numeroD);
 
   	for(let i=0; i<textoD.length; i++){
-  		
+  		textASCII_decode=textoD.charCodeAt(i);
+
 
   	}
     /* Acá va tu código */
