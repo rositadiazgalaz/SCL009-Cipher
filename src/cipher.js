@@ -59,6 +59,7 @@ window.cipher = {
       }
       // rango de minusculas 97 a 122
       else if(textASCII_decode>=97 && textASCII_decode<122){
+        asciiCode_decode=(textASCII_decode-122-numClave_decode)%26+122;
         textoCipher_decode+=String.fromCharCode(asciiCode_decode);
       }
 
