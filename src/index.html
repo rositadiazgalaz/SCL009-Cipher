@@ -7,24 +7,29 @@
   </head>
   <body>
     <div id="root">
-      <h1>Santo Secreto</h1>
-      <h2>Ingresa un número secreto que será la clave para descifrar tu mensaje</h2>
+      <h1 id="titulo">Mensaje Secreto</h1>
+      <p id="parrafo"><span id="primero">Primero</span> <span id="destacado">ingresa un número secreto</span>,<br> <span id="celeste">que será la clave para descifrar tu mensaje</span></p>
     </div>
-    <button id="cifrar-btn">cifrar</button>
-    <input type="number" id="clave" placeholder="numero clave" required="No olvides tu numero clave de cifrado">
-    <button id="descifrar-btn">descrifrar</button>
+    <input type="number" id="clave" placeholder="Número Secreto" required="No olvides tu numero clave de cifrado">
+
+    <button id="cifrar-btn">Cifrar</button>
+    
+   
 
     <div id="texto-area">
-      <textarea name="mensaje" id="mensaje" class="textArea" cols="30" rows="10" placeholder="ingresa mensaje" required="Ingresa un mensaje"></textarea>
+      <textarea name="mensaje" id="mensaje" class="textArea" cols="30" rows="10" placeholder="Ingresa tu mensaje" required="Ingresa un mensaje"></textarea>
     </div>
 
     <div id="raiz">
       
     </div>
-<!-- CAMBIAR ONCLICK -->
+
+    <button id="compartir" onclick="location.href='https://www.facebook.com/messages/t/823162207'" target="_blank">Compartir</button>
+    <!-- CAMBIAR ONCLICK -->
     <button onclick="location.reload()" id="btn-nvo-msj">Limpiar</button>
 
-    <button id="compartir">compartir</button>
+     <button id="descifrar-btn">Descifrar</button>
+
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

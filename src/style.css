@@ -56,6 +56,42 @@
 	border:2px solid red;
 	border-radius: 4px;
 	background-color: transparent;
-	font-size: 16px;
+	font-size: 25px;
 	resize:none;
+}
+#clave{
+	background-color: gold;
+	padding:15px 32px;
+	width: 220px;
+	text-align: right;
+}
+input::webkit-input-placeholder{
+	color:black;
+
+}
+input:moz-placeholder{
+color:black;
+}
+input:-ms-input-placeholder{
+color:black;
+}
+input::placeholder{
+	color:#B22222;
+	font-size: 19px;
+}
+#parrafo{
+	font-size: 30px;
+}
+#destacado{
+	background-color: gold;
+}
+#primero{
+	background-color: red;
+}
+#celeste{
+	background-color: aqua;
+}
+h1{
+	color:#800000;
+	font-size: 50px;
 }
