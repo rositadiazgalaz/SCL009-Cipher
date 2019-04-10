@@ -8,6 +8,10 @@ window.cipher = {
     let asciiCode=0;
     let numClave= parseInt(numero);
 
+    if (numero == "") {
+      
+    }
+
     for (let i=0; i<texto.length; i++){
     	// charCodeAt() es un metodo que devuelve un valor Unicode
     	// del caracter en el indice proporcionado 
@@ -20,7 +24,7 @@ window.cipher = {
     		textoCipher+=String.fromCharCode(asciiCode);
 
     	}
-      
+
     	// en el rango de las mayusculas 
     	else if (textASCII>=65 && textASCII<=90) {
     		asciiCode=(textASCII-65+numClave)%26+65;
@@ -50,7 +54,7 @@ window.cipher = {
         // para descrifrar parte con el tope al final por eso 64
         asciiCode_decode=(textASCII_decode-64-numClave_decode)%33+64;
         textoCipher_decode+=String.fromCharCode(asciiCode_decode);
-        
+
       }
       // en el rango de las mayusculas de 65 a 90
       else if (textASCII_decode>=65 && textASCII_decode <=90) {

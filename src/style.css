@@ -1,1 +1,61 @@
 /* Acá va tu código */
+#cifrar-btn{
+	background-color:red;
+	border:none;
+	color:whitesmoke;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	cursor: pointer;
+}
+#descifrar-btn{
+	background-color:aqua;
+	border:none;
+	color:black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	cursor: pointer;
+
+}
+#compartir{
+	background-color:#7CFC00;
+	border:none;
+	color:#2F4F4F;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	cursor: pointer;
+}
+#btn-nvo-msj{
+	background-color:#D3D3D3;
+	border:none;
+	color:#2F4F4F;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	cursor: pointer;
+}
+#mensaje{
+	width: 30%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border:2px solid red;
+	border-radius: 4px;
+	background-color: transparent;
+	font-size: 16px;
+	resize:none;
+}
