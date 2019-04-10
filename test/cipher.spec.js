@@ -13,13 +13,16 @@ describe('cipher', () => {
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33',()=>{
       assert.equal(window.cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"),"HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
-    it('deberia retornar "taxm,oaya,qefme" para "hola como estas"con offset 12',()=>{
+    it('deberia retornar "taxm,oaya,qefme" para "hola como estas" con offset 12',()=>{
       assert.equal(window.cipher.encode(12,"hola como estas"),"taxm,oaya,qefme");
     });
-    it('deberia retornar "bifu<ymnum::" para "hola estas??"con offset 358',()=>{
+    it('deberia retornar "bifu<ymnum::" para "hola estas??" con offset 358',()=>{
       assert.equal(window.cipher.encode(358,"hola estas??"),"bifu<ymnum::");
     });
-  });
+    it('deberia retornar ">-" para ":)" con offset 4',()=>{
+      assert.equal(window.cipher.encode(358,":)"),">-");
+    });
+  });    
 
   describe('cipher.decode', () => {
 
@@ -33,6 +36,14 @@ describe('cipher', () => {
     it('deberia retornar "hola como estas" para "taxm,oaya,qefme"con offset 12',()=>{
       assert.equal(window.cipher.encode(12,"taxm,oaya,qefme"),"hola como estas");
     });
+     it('deberia retornar "hola estas??" para "bifu<ymnum::"con offset 358',()=>{
+      assert.equal(window.cipher.encode(358,"bifu<ymnum::"),"hola estas??");
+    });
+    it('deberia retornar ":)" para ">-" con offset 4',()=>{
+      assert.equal(window.cipher.encode(358,">-"),":)"); 
+    }); 
+
+
   });
 
 });
